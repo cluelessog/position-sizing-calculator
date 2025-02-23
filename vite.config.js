@@ -4,10 +4,10 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: "position-sizing-calculator"
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': '/src', // Ensure this points correctly to your `src` folder
     },
   },
+  base: "position-sizing-calculator"
 });
